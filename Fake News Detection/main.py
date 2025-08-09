@@ -8,7 +8,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Google Gemini API key and setup
-GOOGLE_API_KEY = "AIzaSyBht2cqljIEqxARV4h_IZI0PHBBZ8rlF0Y"
+GOOGLE_API_KEY = "GOOGLE API CODE"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Configure upload folder
@@ -70,3 +70,4 @@ def home():
 if __name__ == "__main__":
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     app.run(debug=True)
+
